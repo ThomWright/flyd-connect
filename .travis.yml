@@ -2,8 +2,16 @@ language: node_js
 node_js:
 - '0.12'
 - '0.10'
-sudo: false # use container-based architecture; starts up faster
+sudo: false
 notifications:
   email:
     on_success: never
     on_failure: always
+deploy:
+  provider: npm
+  email: npm@thomwright.co.uk
+  api_key:
+    secure: pUO6mOVho1WJAtbqmzsUzQ0M+7fVAg8YBu97o9f7spx+t3o/0ybReFn7vZBk4PmWLN+DnHDFwltjUTWCalA5j1kc42/X2dcSoNcjm0rSHQTcSxB4aBbmlo7mOvH3u9nSwD3PKzwH1NAASLXfJHtqDNLRuvcwp+0OViLX/0jv3y9jfH5c2B0cQUehhWtI4e21VIFEeyZKW2+wSCah+U3N96gHfJcflCyooiVy7GpWjfx4Zo3Z3n0OTy8Jj7ybQc0T1ZRyApGYNQmGawNbuz+WXG9q6ff7O+/+oWt/CgOCTeXR+WTpQwQpQCWGHyV83j0uLwJ9KY2GN1qb54VZ7BVNCu77fnH5P4iTCLT8zL23MDzCxHbphqN+7CqRNzCHpVK9PmUNaxzNziEZVsU5pl0vZYxtHPZ/HMwET+IuupyaychxVJCtxYe1y6nDVin9VUxOfSbLkbksJOVHubXGOi8mEZgAFd6gsXka8zid1Qm5UDAzdNgN84wQUC6afQn6ZT4hM0dcy1OZ8I5CWNqbFa5P+kNqWUi3vRshGqQ24+FF3b8l5HL/t5jL/DRjGrhxOrDa0c3tX+Srh6i0BJd4irmMQ7CbuEOQ7mkErUfUBvzxcXZRSxnmUOqoIya4zckTpZF5UlOPOAcRGszNf1lPYtupSFpC156ZokrqCQj9xJie9bM=
+  on:
+    tags: true
+    repo: ThomWright/flyd-connect
