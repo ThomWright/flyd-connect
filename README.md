@@ -25,6 +25,8 @@ const s3 = flyd.stream();
 const s4 = s2.map(x => x + 1);
 
 connect(s2, s3);
+// alternatively:
+connect(s2).to(s3);
 
 flyd.on((x) => {
   console.log('2x + 1 =', x);

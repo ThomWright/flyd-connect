@@ -41,4 +41,15 @@ describe('connect', () => {
 
     expect(s4()).to.equal(3);
   });
+
+  it('should have a more literate API', () => {
+    const s1 = flyd.stream();
+    const s2 = flyd.stream();
+
+    connect(s1).to(s2);
+
+    s1(1);
+
+    expect(s2()).to.equal(1);
+  });
 });
