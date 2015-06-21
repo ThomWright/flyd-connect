@@ -1,7 +1,7 @@
 {
   "name": "flyd-connect",
   "version": "0.1.1",
-  "description": "A reactive game loop.",
+  "description": "Connects the output of one stream to the input of another.",
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && babel src --out-dir dist --optional es7.objectRestSpread --optional runtime --ignore \"__tests__\"",
