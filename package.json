@@ -1,6 +1,6 @@
 {
   "name": "flyd-connect",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Connects the output of one stream to the input of another.",
   "main": "dist/index.js",
   "scripts": {
